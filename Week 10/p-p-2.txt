@@ -1,0 +1,4 @@
+111 	A B C D E
+333 	D C B A E
+555 	A A B D E
+777 	B C D A E

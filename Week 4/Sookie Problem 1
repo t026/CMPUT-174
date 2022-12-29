@@ -1,0 +1,22 @@
+with open ("employees.txt", "r") as f:
+    employeeList = f.readlines()
+    newList = []
+    for i in range(0, len(employeeList)):
+        temp = employeeList[i].split(" ")
+        temp = [x.strip(' ') for x in temp]
+        hours = 0
+        print(temp)
+        for i in range(1, len(temp)):
+            if temp(i) == '':
+                temp.remove(i)
+            else:
+                hours += temp(i)
+        newList.append([temp[0], hours, '$' + str(hours*20)])
+average = 0
+for i in newList:
+    print(i[0], i[1], i[2])
+    average += i[1]
+average /= 4
+for i in newList:
+    if i[1] > average:
+        print(f"{i[0]} worked {i[1] - average} more hours than the average.")
